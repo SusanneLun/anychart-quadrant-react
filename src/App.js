@@ -42,9 +42,11 @@ class App extends Component {
     state = {
       chartData: data
     }
+
   render() {
     var chart = anychart.quadrant();
-    const dataSet = anychart.data.set(this.state.data);  
+    const dataSet = anychart.data.set(this.state.chartData);  
+    console.log(dataSet)
     var markers = chart.marker(dataSet);
     // set labels settings
     markers.labels()
