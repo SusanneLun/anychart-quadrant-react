@@ -67,7 +67,7 @@ class App extends Component {
     chart.xScale().minimum(0);
     chart.xScale().maximum(10)
 
-    chart.title("Power/Interest Ratings")
+    chart.title("Power/Interest Position")
     chart.container("container")
     chart.draw();
 
